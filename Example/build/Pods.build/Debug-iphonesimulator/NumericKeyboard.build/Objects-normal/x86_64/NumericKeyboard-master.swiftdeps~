@@ -1,0 +1,6 @@
+version: "Apple Swift version 4.2 (swiftlang-1000.11.37.1 clang-1000.11.45.1)"
+options: "786ac9c87373ae25b95a513d4cb5dd62"
+build_time: [1543308312, 491728000]
+inputs:
+  "/Users/juntung/Dev/OpenSource/NumericKeyboard/NumericKeyboard/Classes/NKInputView.swift": !dirty [1543308312, 0]
+  "/Users/juntung/Dev/OpenSource/NumericKeyboard/NumericKeyboard/Classes/NKKeyboardButton.swift": [1543308279, 0]
