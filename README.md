@@ -69,11 +69,17 @@ iOS 8+
 
 ## Installation
 
+### CocoaPods
 NumericKeyboard is available through [CocoaPods](http://cocoapods.org). To install
 it, simply add the following line to your Podfile:
 
 ```ruby
 pod "NumericKeyboard"
+```
+
+### Carthage
+```
+github "marcjordant/NumericKeyboard"
 ```
 
 ## Author
