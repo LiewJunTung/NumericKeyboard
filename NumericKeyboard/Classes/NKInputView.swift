@@ -98,6 +98,10 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
      */
     case done
     
+    /**
+     Hide the next button
+    */
+    case none
     
     /**
      Use this value for specifying a custom text
@@ -107,11 +111,21 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
      */
     case custom(text: String, actionButton: Bool)
     
+    func isHidden() -> Bool {
+        switch self{
+        case .none:
+            return true
+        default:
+            return false
+        }
+    }
     
     func text() -> String {
       switch self {
       case .custom(let text, _):
         return text
+      case .none:
+        return ""
       default:
         let podBundle = Bundle(for: NKInputView.self)
         let bundleURL = podBundle.url(forResource: "NumericKeyboard", withExtension: "bundle")
