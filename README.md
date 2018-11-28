@@ -74,10 +74,10 @@ iOS 8+
 github "LiewJunTung/NumericKeyboard"
 ```
 
-## Author
+## Author(s)
 
-Marc Jordant, marcjordant@gmail.com
-Liew Jun Tung, liewjuntung@gmail.com
+- Marc Jordant, marcjordant@gmail.com
+- Liew Jun Tung, liewjuntung@gmail.com
 
 ## License
 
