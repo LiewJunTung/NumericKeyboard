@@ -79,6 +79,9 @@ github "LiewJunTung/NumericKeyboard"
 - Marc Jordant, marcjordant@gmail.com
 - Liew Jun Tung, liewjuntung@gmail.com
 
+## Troubleshoot
+- If there is a problem with installation via Carthage. Run `rm -rf ~/Library/Caches/org.carthage.CarthageKit` to remove the cache directory.
+
 ## License
 
 NumericKeyboard is available under the MIT license. See the LICENSE file for more info.
