@@ -384,8 +384,11 @@ open class NKInputView: UIView, UIInputViewAudioFeedback
       let decimalChar = (Locale.current as NSLocale).object(forKey: NSLocale.Key.decimalSeparator) as? String ?? "."
       let buttonsValues = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", decimalChar, "+"]
       let char = buttonsValues[sender.tag]
-      textView?.insertText(char)
-      
+      if char == decimalChar || char == "+" {
+        textView?.insertText(char)
+      } else {
+        textView?.insertText(sender.titleLabel?.text ?? "")
+      }
       if isTextField() {
         NotificationCenter.default.post(name: NSNotification.Name.UITextFieldTextDidChange, object: self.textView)
       }
